@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>CRUD!</title>
+</head>
+
+<body>
+    <section>
+        <div class="container mt-4">
+            <div align="center" style="font-weight: bold">
+                <h3>CRUD(Create Read Update Delete) Operation Using JavaScript</h3>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row g-3">
+                <div class="col">
+                    <label for="inputEmail4" class="form-label" style="font-weight: bold">User Id</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              placeholder="User Id"
+              aria-label="User Id"
+              id="userid"
+            />
+          </div>
+          <div class="col-md-6">
+            <label
+              for="inputEmail4"
+              class="form-label"
+              style="font-weight: bold"
+              >IT Number</label
+            >
+            <input
+              type="number"
+              class="form-control"
+              placeholder="IT Number"
+              aria-label="IT Number"
+              id="itnumber"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label for="inputEmail" class="form-label" style="font-weight: bold"
+              >Title</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              placeholder="Enter Your Title"
+              id="title"
+            />
+          </div>
+
+          <div class="col-md-6">
+            <label
+              for="inputAddress"
+              class="form-label"
+              style="font-weight: bold"
+              >Message</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="msg"
+              placeholder="Type here"
+            />
+          </div>
+        </div>
+
+        <div class="container mt-4">
+          <div align="center">
+            <button
+              type="submit"
+              class="btn btn-success"
+              onclick="onSubmitForm()"
+              style="font-weight: bold"
+            >
+              Submit
+            </button>
+            <button
+              type="reset"
+              class="btn btn-warning"
+              onclick="onResetForm()"
+              style="font-weight: bold"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+        <div>
+          <h6
+            style="
+              text-align: center;
+              font-weight: bold;
+              color: red;
+              margin-top: 30px;
+            "
+          >
+            Please Note: That the given data below are the dummy data and fetch
+            this below data from the dummy API`s and you can easily edit and
+            delete this record as well.
+          </h6>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-5">
+        <table class="table" id="storelist">
+          <thead>
+            <tr>
+              <th scope="col">User Id</th>
+              <th scope="col">It Number</th>
+              <th scope="col">Title</th>
+              <th scope="col">Message</th>
+              <th scope="col">Button</th>
+            </tr>
+          </thead>
+          <tbody id="tablebody" style="border: 2px solid black">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section></section>
+
+    <script src="script.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
