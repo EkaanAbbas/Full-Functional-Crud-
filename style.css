@@ -8,3 +8,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: lightgray;
 }
+
+@media only screen and (max-width: 600px) {
+    .background-clr {
+        /* background-color: #76d4bd; */
+        background-color: white;
+        border-radius: 25px;
+        box-shadow: 2px 2px lightgrey;
+    }
+    .table-head {
+        color: white;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66));
+        position: relative;
+        right: 9.5px;
+    }
+    body {
+        background-color: #76d4bd;
+        padding: 15px;
+    }
+}
