@@ -32,21 +32,21 @@
                 <div class="row g-3">
                     <div class="col">
                         <label for="inputEmail4" class="form-label">User Id</label>
-                        <input type="number" class="form-control" placeholder="User Id" aria-label="User Id" id="userid" />
+                        <input type="number" class="form-control" placeholder="User Id" aria-label="User Id" id="userid" maxlength="4" />
                     </div>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">Name</label>
-                        <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="Name" id="Name" />
+                        <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="Name" id="Name" maxlength="25" />
                     </div>
 
                     <div class="col-md-6">
                         <label for="inputEmail" class="form-label">Title</label>
-                        <input type="text" class="form-control" id="title" placeholder="Enter Your Title" id="title" />
+                        <input type="text" class="form-control" id="title" placeholder="Enter Your Title" id="title" maxlength="20" />
                     </div>
 
                     <div class="col-md-6">
                         <label for="inputAddress" class="form-label">Message</label>
-                        <input type="text" class="form-control" id="msg" placeholder="Type here" />
+                        <input type="text" class="form-control" id="msg" placeholder="Type here" maxlength="50" />
                     </div>
                 </div>
 
@@ -67,41 +67,32 @@
             </div>
         </section>
 
-        <!-- <section>
-            <div class="container mt-5">
-                <table class="table table-head" id="storelist">
-                    <thead align="center">
-                        <tr align="center">
-                            <th scope="col">User Id</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Message</th>
-                            <th scope="col">Button</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tablebody">
-                        <tr></tr>
-                    </tbody>
-                </table>
-                <br />
-            </div>
-        </section> -->
         <section>
             <div class="container mt-5">
-                <table class="table table-head" id="storelist">
-                    <thead>
-                        <tr>
-                            <th scope="col">User ID</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Message</th>
-                            <th scope="col">Button</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tablebody">
-                        <tr></tr>
-                    </tbody>
-                </table>
+                <h5 align="center" style="color: red">
+                    Please Note: This below given data is editable and changable and fetch from API`s you can enter data manually as well.
+                </h5>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-5">
+                <div style="overflow-x: auto">
+                    <table class="table table-responsive" id="storelist">
+                        <thead>
+                            <tr>
+                                <th scope="col">User ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Message</th>
+                                <th scope="col">Button</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
                 <br />
             </div>
         </section>
