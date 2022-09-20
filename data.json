@@ -1,18 +1,18 @@
 [{
-        "userid": 4805,
-        "name": "Eqan Abbas",
+        "userid": 405,
+        "Name": "Eqan Abbas",
         "title": "React JS",
-        "msg": "Hello!!! Guys How are you?"
+        "msg": "Hello!!! How are you?"
     },
     {
         "userid": 415,
-        "name": "Hassan Imtiaz",
+        "Name": "Hassan Imtiaz",
         "title": "Node JS",
         "msg": "Hello!!! What are you doing?"
     },
     {
         "userid": 440,
-        "name": "Hadi Hassan",
+        "Name": "Hadi Hassan",
         "title": "React Native",
         "msg": "Hello!!! Whats up?"
     }
