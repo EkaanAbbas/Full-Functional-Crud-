@@ -48,8 +48,8 @@ function addData(data) {
   cell4 = newrow.insertCell(3);
   cell4.innerHTML = data.msg;
   cell5 = newrow.insertCell(4);
-  cell5.innerHTML = ` <button type="Edit" class="btn btn-primary" style="font-weight: bold" onclick="editform(this)">Edit</button>
-    <button type="Delete" class="btn btn-danger"  onclick="delform(this) style="font-weight: bold"">Delete</button>`;
+  cell5.innerHTML = ` <button type="Edit" class="btn btn-primary" onclick="editform(this)">Edit</button>
+    <button type="Delete" class="btn btn-danger"  onclick="delform(this)">Delete</button>`;
 }
 
 function onResetForm() {
