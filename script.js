@@ -7,7 +7,7 @@ function onSubmitForm() {
 
   if (
     data.userid == "" &&
-    data.name == "" &&
+    data.Name == "" &&
     data.title == "" &&
     data.msg == ""
   ) {
@@ -26,7 +26,7 @@ function readData() {
   var data = {};
 
   data["userid"] = document.getElementById("userid").value;
-  data["name"] = document.getElementById("name").value;
+  data["Name"] = document.getElementById("Name").value;
   data["title"] = document.getElementById("title").value;
   data["msg"] = document.getElementById("msg").value;
 
@@ -42,19 +42,19 @@ function addData(data) {
   cell1 = newrow.insertCell(0);
   cell1.innerHTML = data.userid;
   cell2 = newrow.insertCell(1);
-  cell2.innerHTML = data.name;
+  cell2.innerHTML = data.Name;
   cell3 = newrow.insertCell(2);
   cell3.innerHTML = data.title;
   cell4 = newrow.insertCell(3);
   cell4.innerHTML = data.msg;
   cell5 = newrow.insertCell(4);
-  cell5.innerHTML = ` <button type="Edit" class="btn btn-primary" onclick="editform(this)">Edit</button>
+  cell5.innerHTML = ` <button type="Edit" class="btn btn-warning" onclick="editform(this)">Edit</button>
     <button type="Delete" class="btn btn-danger"  onclick="delform(this)">Delete</button>`;
 }
 
 function onResetForm() {
   document.getElementById("userid").value = "";
-  document.getElementById("name").value = "";
+  document.getElementById("Name").value = "";
   document.getElementById("title").value = "";
   document.getElementById("msg").value = "";
   counter = null;
@@ -71,14 +71,14 @@ function delform(r) {
 function editform(td) {
   counter = td.parentElement.parentElement;
   document.getElementById("userid").value = counter.cells[0].innerHTML;
-  document.getElementById("name").value = counter.cells[1].innerHTML;
+  document.getElementById("Name").value = counter.cells[1].innerHTML;
   document.getElementById("title").value = counter.cells[2].innerHTML;
   document.getElementById("msg").value = counter.cells[3].innerHTML;
 }
 
 function updateform(data) {
   counter.cells[0].innerHTML = data.userid;
-  counter.cells[1].innerHTML = data.name;
+  counter.cells[1].innerHTML = data.Name;
   counter.cells[2].innerHTML = data.title;
   counter.cells[3].innerHTML = data.msg;
 }
@@ -94,11 +94,11 @@ fetch("data.json")
     objData.map((values) => {
       tbldata += `<tr>
       <td>${values.userid}</td>
-      <td>${values.name}</td>
+      <td>${values.Name}</td>
       <td>${values.title}</td>
       <td>${values.msg}</td>
       <td>
-      <button type="Edit" class="btn btn-primary" onclick="editform(this)">Edit</button>
+      <button type="Edit" class="btn btn-warning" onclick="editform(this)">Edit</button>
       <button type="Delete" class="btn btn-danger"  style=" margin-top: 3px"   onclick="delform(this)">Delete</button>
       </td>
        </tr>`;
