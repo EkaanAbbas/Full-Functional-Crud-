@@ -18,9 +18,10 @@ body {
     }
     .table-head {
         color: white;
+        align-items: center;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.66));
-        position: relative;
-        right: 21px;
+        /* position: relative;
+        right: 21px; */
     }
     body {
         background-color: #76d4bd;
